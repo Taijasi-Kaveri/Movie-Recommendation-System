@@ -9,23 +9,23 @@ Follow the instructions in the README.md file to set up the project and run it o
 ## Project Structure
 The project is structured as follows:
 
-css
-Copy code
-├── data
-│   └── ratings.csv
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   ├── MovieRecommendation.java
-│   │   │   ├── Rating.java
-│   │   │   └── User.java
-│   │   └── resources
-│   │       └── application.properties
-│   └── test
-│       └── java
-│           └── MovieRecommendationTest.java
-├── pom.xml
-└── README.md
+* css
+* Copy code
+* ├── data
+* │   └── ratings.csv
+* ├── src
+* │   ├── main
+* │   │   ├── java
+* │   │   │   ├── MovieRecommendation.java
+* │   │   │   ├── Rating.java
+* │   │   │   └── User.java
+* │   │   └── resources
+* │   │       └── application.properties
+* │   └── test
+* │       └── java
+* │           └── MovieRecommendationTest.java
+* ├── pom.xml
+* └── README.md
 1. data/ratings.csv - the MovieLens dataset file containing movie ratings provided by users.
 2. src/main/java - the directory containing the Java source code for the project.
 3. src/main/resources/application.properties - the configuration file for the project.
