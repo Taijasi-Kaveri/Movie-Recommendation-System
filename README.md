@@ -9,6 +9,7 @@ Follow the instructions in the README.md file to set up the project and run it o
 ## Project Structure
 The project is structured as follows:
 
+```
 * css
 * Copy code
 * ├── data
@@ -26,11 +27,28 @@ The project is structured as follows:
 * │           └── MovieRecommendationTest.java
 * ├── pom.xml
 * └── README.md
+```
+
 1. data/ratings.csv - the MovieLens dataset file containing movie ratings provided by users.
 2. src/main/java - the directory containing the Java source code for the project.
 3. src/main/resources/application.properties - the configuration file for the project.
 4. pom.xml - the Maven project configuration file.
 5. README.md - the project documentation.
+
+## Running the Project
+To run the project, follow these steps:
+
+i. Clone the repository to your local machine.
+
+ii. Navigate to the project directory and run the following command to build the project:
+```
+mvn clean package
+```
+Once the project has been built, run the following command to execute the MovieRecommendation class:
+```
+spark-submit --class com.example.MovieRecommendation target/movie-recommendation-1.0-SNAPSHOT.jar
+```
+This will execute the project and generate movie recommendations for each user.
 
 ## License
 This project is licensed under the MIT License.
